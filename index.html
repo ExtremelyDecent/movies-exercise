@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review</title>
+    <link rel="stylesheet"
+    href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="movie-review-title">Movie Review</h1>
+        <div class="form-box">
+            <form id="new-movies-form" class="movie-form">
+                <label for="movie-title">
+                    Title
+                    <input type="text" id="movie-title" class="inputs-for-form">
+                </label>
+                <label for="movie-rating">
+                    Movie rating
+                    <input type="range" id="movie-rating" class="inputs-for-form" min="0" max="10">
+                </label>
+                <div id="range-value">
+                    5
+                </div>
+                <button type="submit" class="btn-submit">Add Movie</button>
+            </form>
+        </div>
+        
+        <table id="movie-table" class="table">
+            <thead class="tablehead">
+                <tr>
+                    <th scope="col">
+                        Movie
+                        <i id="movie" class="fas fa-sort-down"></i>
+                    </th>
+                    <th scope="col">
+                        Rating
+                        <i id="rating" class="fas fa-sort-down"></i>
+                    </th>
+                    <th scope="col">
+                        Remove
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="movie-table-body">
+    
+            </tbody>
+        </table>
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
